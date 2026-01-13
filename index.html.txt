@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SRI TECH CAR AUDIO | Sri Lanka</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container head-flex">
+      <div class="logo">SRI TECH CAR AUDIO</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="cart-icon">🛒<span id="cart-count">0</span></div>
+    </div>
+  </header>
+
+  <!-- HERO CAROUSEL -->
+  <section id="home" class="hero">
+    <div class="slide active" style="background:url(https://source.unsplash.com/1600x600/?car-audio,bass) center/cover no-repeat;">
+      <div class="slide-content">
+        <h2>Upgrade Your Drive</h2>
+        <p>Premium Android Players & Subwoofers</p>
+        <a href="#shop" class="btn">Shop Now</a>
+      </div>
+    </div>
+    <div class="slide" style="background:url(https://source.unsplash.com/1600x600/?subwoofer,amplifier) center/cover no-repeat;">
+      <div class="slide-content">
+        <h2>Combo Deals</h2>
+        <p>Speakers + Amp + Sub at Special Price</p>
+        <a href="#shop" class="btn">Grab Deal</a>
+      </div>
+    </div>
+    <div class="slide" style="background:url(https://source.unsplash.com/1600x600/?dashcam,car) center/cover no-repeat;">
+      <div class="slide-content">
+        <h2>Dashboard Cameras</h2>
+        <p>Full-HD Reverse & Dash Cams</p>
+        <a href="#shop" class="btn">Buy Now</a>
+      </div>
+    </div>
+    <div class="dots">
+      <span class="dot active" data-slide="0"></span>
+      <span class="dot" data-slide="1"></span>
+      <span class="dot" data-slide="2"></span>
+    </div>
+  </section>
+
+  <!-- SHOP / PRODUCTS -->
+  <section id="shop" class="shop container">
+    <h2>Our Products</h2>
+
+    <h3 class="cat-title">Android Players</h3>
+    <div class="grid">
+      <div class="card">
+        <span class="sale">SALE</span>
+        <img src="https://source.unsplash.com/300x200/?android-car-stereo" alt="">
+        <h4>10.1" Android Player</h4>
+        <p class="price">Rs 38,000 <del>42,000</del></p>
+        <button class="atc" data-product="Android Player">Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/300x200/?car-touch-screen" alt="">
+        <h4>9" HD Android Unit</h4>
+        <p class="price">Rs 32,500</p>
+        <button class="atc" data-product="Android Unit">Add to Cart</button>
+      </div>
+    </div>
+
+    <h3 class="cat-title">Subwoofers</h3>
+    <div class="grid">
+      <div class="card">
+        <img src="https://source.unsplash.com/300x200/?subwoofer" alt="">
+        <h4>JBL 12" Sub</h4>
+        <p class="price">Rs 18,900</p>
+        <button class="atc" data-product="JBL Sub">Add to Cart</button>
+      </div>
+      <div class="card">
+        <span class="sale">HOT</span>
+        <img src="https://source.unsplash.com/300x200/?bass-speaker" alt="">
+        <h4>Pioneer Dual Bass Tube</h4>
+        <p class="price">Rs 22,000 <del>26,000</del></p>
+        <button class="atc" data-product="Pioneer Tube">Add to Cart</button>
+      </div>
+    </div>
+
+    <h3 class="cat-title">Speakers</h3>
+    <div class="grid">
+      <div class="card">
+        <img src="https://source.unsplash.com/300x200/?car-speaker" alt="">
+        <h4>Rockford 6.5" Component</h4>
+        <p class="price">Rs 14,500</p>
+        <button class="atc" data-product="Rockford Components">Add to Cart</button>
+      </div>
+    </div>
+
+    <h3 class="cat-title">Dashboard & Reverse Cameras</h3>
+    <div class="grid">
+      <div class="card">
+        <img src="https://source.unsplash.com/300x200/?dashcam" alt="">
+        <h4>Full-HD Dash Cam</h4>
+        <p class="price">Rs 9,900</p>
+        <button class="atc" data-product="Dash Cam">Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/300x200/?reverse-camera" alt="">
+        <h4>Night-Vision Reverse Cam</h4>
+        <p class="price">Rs 6,500</p>
+        <button class="atc" data-product="Reverse Cam">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about container">
+    <h2>About SRI TECH</h2>
+    <p>Founded in Colombo, SRI TECH CAR AUDIO is Sri Lanka’s trusted address for premium in-car entertainment. Our trained technicians guarantee clean installs, tuned sound, and after-sales support that keeps you rolling.</p>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact container">
+    <h2>Contact Us</h2>
+    <p><strong>Address:</strong> 123 High-Level Rd, Colombo 06, Sri Lanka</p>
+    <p><strong>Phone:</strong> <a href="tel:+94112345678">+94 112 345 678</a> | <a href="tel:+94771234567">+94 77 123 45 67</a></p>
+    <p><strong>Email:</strong> info@sritech.lk</p>
+
+    <form id="contactForm" novalidate>
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container foot-grid">
+      <div>
+        <h3>SRI TECH CAR AUDIO</h3>
+        <p>Premium car-audio solutions in Sri Lanka.</p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p>+94 77 123 45 67<br>info@sritech.lk</p>
+      </div>
+    </div>
+    <p class="copy">&copy; <span id="year"></span> SRI TECH CAR AUDIO. All rights reserved.</p>
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/94771234567" class="float-wa" target="_blank" title="WhatsApp Us">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff">
+      <path d="M12 2a10 10 0 0 0-7.9 16.9l-1.5 5.4 5.5-1.4A10 10 0 1 0 12 2zm5.4 14.3-3-1.3-1.8 1.1c-.5.3-1.1.5-1.7.5-.8 0-1.6-.3-2.2-.9l-.7-.7-2.7 1.1 1.1-2.7-.7-.7c-.6-.6-.9-1.4-.9-2.2 0-.6.2-1.2.5-1.7l1.1-1.8-1.3-3c-.1 0 0 0 0 0-.1 0-.1.1-.1.1l-.6 1.5c-.3.7-.4 1.5-.4 2.3 0 3.3 2.7 6 6 6 .8 0 1.6-.1 2.3-.4l1.5-.6c.1 0 .1 0 .1-.1 0-.1-.1-.1-.1-.1z"/>
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
